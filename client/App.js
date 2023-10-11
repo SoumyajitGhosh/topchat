@@ -8,6 +8,7 @@ import Login from "./screens/Login";
 import Signup from "./screens/Signup";
 // import Chat from "./screens/Chat";
 import Home from "./screens/Home";
+import Chat from "./screens/Chat";
 
 const Stack = createStackNavigator();
 const AuthenticatedUserContext = createContext({});
@@ -36,6 +37,7 @@ function AuthStack() {
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Chat" component={Chat} />
     </Stack.Navigator>
   );
 }
